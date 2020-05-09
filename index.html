@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I.D.T.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <style> #canvasParent{padding:0; margin:0;} </style>
+    <link rel="stylesheet" href="https://use.typekit.net/ech5kei.css">
+  </head>
+  <body>
+    <div id="canvasParent"></div>
+
+<div id="overlay" onclick="off()">
+  <div id="text">
+    An Input Drawing Tool <br>
+    by Arjun Menon. <br><br>
+    made with P5.js<br>
+    Instagram: <a href="https://www.instagram.com/arjun1am/" target="_blank">@arjun1am</a><br>
+    Email: arjuna1am.am@gmail.com<br>
+
+    <span style="font-size:12px;opacity:.5;">
+      tap anywhere to exit
+    </span>
+  </div>
+</div>
+
+<div id="overlay2">
+  <div id="text2">
+    The Input drawing tool is currently unavailable on mobile.
+    <br>
+    <span style="font-size:12px;opacity:.5;">
+      open in desktop to draw.
+    </span>
+  </div>
+</div>
+
+<button type="button" class="info" onclick="on()" >
+  <span>?</span>
+</button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
