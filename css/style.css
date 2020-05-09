@@ -157,3 +157,28 @@ html{
     font-weight: 400;
   }
 }
+
+/* make this overlay thing not work on safari */
+_::-webkit-full-page-media, _:future, :root .safari_only {
+
+  #overlay, #overlayabout{
+    display:none;
+  }
+
+}
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    #overlay{
+      display:none;
+    }
+
+}}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+  #overlay{
+    display:none;
+  }
+
+}}
