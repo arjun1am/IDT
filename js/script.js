@@ -86,12 +86,14 @@ st = 0
 // }
 
 function touchMoved(){
+  if(mouseX>150){
    let val = slider.value();
   textColor = colorPicker.color();
   fill(textColor);
   textSize(slider.value());
   textAlign(LEFT, TOP);
   text(input.value(),mouseX,mouseY); // Text wraps within text box
+}
 }
 
 function draw() {
